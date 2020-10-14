@@ -1,0 +1,19 @@
+{
+  "name": "zoom-qr",
+  "version": "1.0.0",
+  "description": "create QR from zoom link",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "qrcode": "^1.4.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
