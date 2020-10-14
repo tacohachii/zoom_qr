@@ -31,10 +31,11 @@ request.post({
       'timezone': 'Asia/Tokyo'
     }
   }, (err, res, data) => {
-    const url = data['start_url'];
+    const url = data['join_url'];
     fs.readdir('./output', (err, files) => {
       QRCode.toFile(`./output/qr_code_${files.length}.png`, url);
     });
+    console.info(url)
     execSync(`open ./output`);
   }
 );
