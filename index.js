@@ -19,7 +19,7 @@ const jwtToken = jwt.sign({
 );
 
 // zoom meeting作成
-const URL = `https://api.zoom.us/v2/users/${userId}/meetings`
+const URL = `https://api.zoom.us/v2/users/${userId}/meetings`;
 request.post({
     uri: URL,
     headers: { 
